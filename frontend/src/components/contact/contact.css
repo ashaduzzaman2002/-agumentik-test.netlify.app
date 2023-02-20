@@ -1,0 +1,291 @@
+.contact__page {
+    height: calc(100vh - 9.2rem);
+    width: 100%;
+}
+
+.contact__page-main{
+    height: 65%;
+    display: flex;
+    width: 100%;
+}
+
+.contact__page-main-info{
+    height: 100%;
+    width: 73%;
+    position: relative;
+}
+
+.contact__page-main-info img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact__page-main-info-text{
+    position: absolute;
+    top: 0;
+    padding: 6rem 4rem;
+    color: #ffffff;
+    background-color: #1010109e;
+    height: 100%;
+    width: 100%;
+}
+
+.contact__page-main-info-text h2{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.contact__page-main-info-text p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin-top: 2rem;
+}
+
+.contact__page-main-info-contact {
+    display: flex;
+}
+.contact__page-main-info-contact a{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #FFE800;
+    padding-right: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact__page-main-info-contact a .icon {
+    padding-right: 1rem;
+    font-size: 2.5rem;
+}
+
+
+.contact__page-mainmap {
+    width: 27%;
+    height: 100%;
+    padding: 2.4rem;
+    background-image: url('https://cartagenadrift.com/img/home-sidebar.png');
+    background-size: cover;
+    background-position: center;
+    
+    overflow: hidden;
+}
+
+
+.contact__page-mainmap-caption {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.contact__page-mainmap-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    box-shadow: -8px 4px 7px rgb(0 0 0 / 54%);
+    
+}
+
+
+.contact__page-mainmap-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact__page-social{
+    display: flex;
+}
+
+.contact__page-social-cards{
+    width: 27%;
+    height: 15rem;
+    display: flex;
+}
+
+.contact__page-social-card {
+    background: rgba(217, 217, 217, 0.09);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset -4px 0px 12px rgb(0 0 0 / 25%);
+    position: relative;
+    transition: all 0.6s;
+    color: #ffffff;
+}
+
+.contact__page-social-card:hover{
+    background-color: #ffffff;
+    color: #101010;
+}
+
+.contact__page-social-card a{
+position: absolute;
+top:0;
+height: 100%;
+width: 100%;
+}
+
+.contact__page-social-card .icon{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact__page-social-card h2{
+    font-family: "Krona One", sans-serif;
+    font-size: 0.8;
+    font-weight: 400;
+}
+
+.contact__page-search {
+    width: 46%;
+    height: 15rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: #ffffff;
+}
+
+
+.contact__page-search h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.search-box {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input{
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    width: 75%;
+    height: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.search-box button{
+    width: 23%;
+    background-color: rgb(254, 246, 13);
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.contact__page-footer {
+    color: #ffffff;
+    display: flex;
+    padding: 3rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .contact__page{
+        height: auto;
+        overflow: auto !important;
+    }
+    .contact__page-main-info{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .contact__page-mainmap{
+        display: none;
+    }
+
+    .contact__page-main-info-text h2{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .contact__page-main-info-text{
+        padding: 3rem 2rem;
+    }
+
+    .contact__page-main-info-text p {
+        line-height: 2.3rem;
+    }
+    
+    .contact__page-main-info-contact {
+        flex-direction: column;
+    }
+   
+    
+
+    .contact__page-search {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 60vh;
+    }
+
+    .contact__page-search h3{
+        line-height: 2rem;
+    }
+
+    
+    .search-box {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .search-box input{
+        width: 100%;
+        height: 6rem;
+    }
+    
+    .search-box button{
+        width: 100%;
+        height: 6rem;
+        margin-top: 2rem;
+    }
+    
+    .contact__page-footer {
+        color: #ffffff;
+        display: flex;
+        padding: 3rem 5rem;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+    
+    .contact__page-social{
+        flex-direction: column;
+    }
+    
+    .contact__page-social-cards{
+        width: 100%;
+    }
+    
+    .contact__page-footer {
+        flex-direction: column;
+        padding: 5rem 5rem;
+    }
+
+
+}

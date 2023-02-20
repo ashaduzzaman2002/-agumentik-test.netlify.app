@@ -1,0 +1,31 @@
+.social {
+    background-color: #ffffff;
+    min-height: calc(100vh - 9.2rem);
+    width: 73%;
+    padding: 5rem;
+}
+
+.social h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+.social .from{
+    width: 60%;
+}
+
+.social .from input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+.social .from h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.from-btn {
+    border: none;
+    background-color: rgb(254, 246, 13);
+    font-size: 1.8rem;
+}

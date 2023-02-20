@@ -1,0 +1,24 @@
+.admin_sidebar {
+    width: 27%;
+    height: calc(100vh - 9.2rem);
+    padding: 5rem 4rem;
+    background-color: #ffffff;
+}
+
+.admin_sidebar ul li {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #626262;
+    cursor: pointer;
+    transition: all 0.5;
+}
+
+.admin_sidebar ul li a{
+    color: #626262;
+}
+
+.admin_sidebar ul li a:hover{
+    color: #101010;
+    border-color: #101010;
+}
